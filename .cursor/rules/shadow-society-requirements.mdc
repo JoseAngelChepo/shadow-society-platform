@@ -1,0 +1,22 @@
+# Shadow Society — agent guidelines
+
+This repo is the **Shadow Society** Next.js platform (not a generic starter to rebrand). Prefer product work in `src/components/shadow-society/` and the debate API client.
+
+See also: `shadow-society-context.mdc` (sibling layout), `docs/COMPONENTS.md`, `docs/FONTS.md`.
+
+## Product checklist
+
+| Area | Where |
+|------|--------|
+| Brand & SEO | `src/app/layout.tsx` (`metadata`) — already Shadow Society |
+| Env | `NEXT_PUBLIC_APP_URL`, `NEXT_PUBLIC_API_URL` → `shadow-society-services` |
+| Main UI | `src/components/shadow-society/` |
+| Debate API | `src/data/api/server/debate.ts` |
+
+## Agent behavior
+
+- Extend **shadow-society** screens and cylinder-window components for product UI.
+- Match existing patterns (`ServicesProvider`, debate client, `@/components/...` imports).
+- Do not reintroduce template landing/auth as the primary product surface unless the user asks.
+- When adding UI dependencies, isolate them in feature wrappers (easy to remove).
+- Keep i18n keys in sync (`en` / `es`) if you touch message bundles.

@@ -1,0 +1,30 @@
+# Shadow Society — project context
+
+Hackathon product (Agent Society / Qwen Cloud Global AI Hackathon 2026). Sibling repos under the same parent folder.
+
+## Sibling repos
+
+- **`shadow-society-platform`** (this repo): Next.js UI — Config → Simulation → Results. Feature UI in `src/components/shadow-society/`.
+- **`shadow-society-services`**: NestJS API. Debate / Judge contracts live there — read that repo for request/response shapes.
+
+## Environment
+
+- `src/config/env.ts`: `NEXT_PUBLIC_APP_URL`, `NEXT_PUBLIC_API_URL` (defaults to local API in dev).
+- API base path is `/api/v1` on the services host (`:3011`).
+
+## App shell
+
+- **`/`**: Shadow Society app (`ShadowSocietyApp`) — no marketing landing in the main flow.
+- Debate client: `src/data/api/server/debate.ts`.
+- Optional leftover auth/landing modules from the starter are unused by the main route; prefer extending `shadow-society/` for product work.
+
+## Styling
+
+- Tokens in `src/app/globals.css` (`--app-*`, `--ss-*` where used).
+- Font: Space Grotesk via `src/config/fonts.ts` + literal `--app-font` in `globals.css` (see `docs/FONTS.md`).
+
+## Component layout
+
+- **`ui/`** — generic reusable pieces.
+- **`shadow-society/`** — product domain (screens, cylinder pyramid, sim mapping).
+- Prefer isolated feature wrappers; avoid scattering product UI into auth/landing leftovers.

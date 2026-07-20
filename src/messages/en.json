@@ -1,0 +1,20 @@
+{
+  "common": {
+    "loading": "Loading…",
+    "signOut": "Sign out"
+  },
+  "auth": {
+    "signIn": {
+      "title": "Sign in",
+      "lede": "Use your email and password to continue."
+    },
+    "signUp": {
+      "title": "Create account",
+      "lede": "Create your account to get started."
+    }
+  },
+  "home": {
+    "title": "Welcome",
+    "lede": "Authenticated area placeholder. Replace this shell with your product UI."
+  }
+}

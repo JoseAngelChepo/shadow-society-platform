@@ -1,0 +1,20 @@
+{
+  "common": {
+    "loading": "Cargando…",
+    "signOut": "Cerrar sesión"
+  },
+  "auth": {
+    "signIn": {
+      "title": "Iniciar sesión",
+      "lede": "Usa tu correo y contraseña para continuar."
+    },
+    "signUp": {
+      "title": "Crear cuenta",
+      "lede": "Crea tu cuenta para comenzar."
+    }
+  },
+  "home": {
+    "title": "Bienvenido",
+    "lede": "Área autenticada de ejemplo. Reemplaza esta vista con la UI de tu producto."
+  }
+}
